@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .menu {
+            position: sticky;
+            background: orangered;
+            border-radius: 10px;
+            z-index: 999;
+            top: 0px;
+        }
+
+        .menu div {
+            display: inline-block;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .position {
+            position: relative;
+            border-radius: 10px;
+            margin-top: 60px;
+            background-color: gainsboro;
+            height: 1000px;
+        }
+
+        .one {
+            position: absolute;
+            background-color: chocolate;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+
+        .two {
+            position: absolute;
+            background-color: green;
+            padding: 10px 30px;
+            border-radius: 10px;
+            top: 10px;
+            right: 10px;
+        }
+
+        .three {
+            position: absolute;
+            background-color: blue;
+            padding: 10px 30px;
+            border-radius: 10px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .four {
+            position: absolute;
+            background-color: gold;
+            padding: 10px 30px;
+            border-radius: 10px;
+            bottom: 30px;
+            left: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Bài tập về position</h2>
+    <p><b>Yêu cầu</b>: Code các box như dưới đây. Chú ý có các bo góc cho các element</p>
+
+    <div class="menu">
+        <div>Trang chủ</div>
+        <div>Giới thiệu</div>
+        <div>Sản phẩm</div>
+        <div>Tin tức</div>
+        <div>Liên hệ</div>
+    </div>
+
+    <div class="position">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+    </div>
+
+
+    <style>
+        .phone {
+            position: fixed;
+            z-index: 100;
+            bottom: 30px;
+            right: 20px;
+        }
+        
+        .circle {
+            margin-top: 10px;
+            margin-right: 10px;
+            position: relative;
+            background-color: green;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+
+    <div class="phone">
+        <div class="circle">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+    </div>
+
+    <style>
+        .lorem {
+            position: relative;
+            background-color: rgb(14, 88, 161);
+            color: white;
+            padding: 50px 30px;
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        .lorem::first-letter {
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+
+        .lorem::first-line {
+            text-transform: uppercase;
+        }
+
+        .lorem::before {
+            content: "";
+            background-color: rgb(49, 49, 173);
+            border-radius: 50%;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 12px;
+            left: 5px;
+            z-index: -1;
+        }
+
+        .lorem::after {
+            content: "";
+            background-color: rgb(49, 49, 173);
+            border-radius: 50%;
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            top: 200px;
+            left: 850px;
+            z-index: -1;
+        }
+    </style>
+
+    <div class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur necessitatibus excepturi ea et vero! Expedita aliquid, placeat quod vel molestias magnam minus est debitis porro adipisci exercitationem esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maxime sequi quasi illo praesentium sapiente corporis magni enim animi, vitae harum eaque voluptatem? Animi eos autem illo eum quos doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae animi cumque eius labore quaerat? Error officiis tempora voluptate quos dolorem a natus sequi, at doloremque vel quidem porro dolor dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum quae in consectetur alias obcaecati architecto totam modi eveniet, libero animi veniam, laudantium commodi quibusdam perspiciatis tempore vero a! Temporibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur necessitatibus excepturi ea et vero! Expedita aliquid, placeat quod vel molestias magnam minus est debitis porro adipisci exercitationem esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maxime sequi quasi illo praesentium sapiente corporis magni enim animi, vitae harum eaque voluptatem? Animi eos autem illo eum quos doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae animi cumque eius labore quaerat? Error officiis tempora voluptate quos dolorem a natus sequi, at doloremque vel quidem porro dolor dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum quae in consectetur alias obcaecati architecto totam modi eveniet, libero animi veniam, laudantium commodi quibusdam perspiciatis tempore vero a! Temporibus.
+    </div>
+</body>
+
+</html>

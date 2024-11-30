@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, tr, td {
+            border: 3px solid rgb(211, 209, 209);
+        }
+
+        td {
+            background-color: rgb(238, 230, 230);
+            padding: 10px;
+            width: 225px;
+        }
+        td:hover {
+            background-color: blue;
+        }
+
+        .duong-ke {
+            border-top: 2px solid rgb(211, 209, 209);
+            margin-top: 8px;
+        }
+        .icon {
+            margin-top: 10px;
+            margin-right: 10px;
+            position: relative;
+            display: inline-block;
+            background-color: rgb(211, 209, 209);
+            border: 1px solid rgb(211, 209, 209);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .icon:hover {
+            background-color: orange;
+        }
+    </style>
+
+    <h2>Bài tập về list</h2>
+    <p><b>Yêu cầu</b>: Code các menu như dưới đây.</p>
+
+    <table>
+        <tr><td>Quần áo</td></tr>
+        <tr><td>Giày dép</td></tr>
+        <tr><td>Mũ</td></tr>
+        <tr><td>Khăn</td></tr>
+        <tr><td>Găng tay</td></tr>
+    </table>
+
+    <div class="duong-ke"></div>
+
+    <div>
+        <div class="icon">
+            <i class="fa-brands fa-google"></i>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+</body>
+</html>
